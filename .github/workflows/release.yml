@@ -33,7 +33,7 @@ jobs:
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               with:
-                  tag_name: "${{ steps.get_version.outputs.VERSION }}"
+                  tag_name: "appV${{ steps.get_version.outputs.VERSION }}"
                   release_name: "app ${{ steps.get_version.outputs.VERSION }}"
                   body: "See the assets to download this version and install."
                   allowUpdates: true
