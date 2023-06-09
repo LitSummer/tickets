@@ -15,7 +15,7 @@ const form = reactive({
     token: "", // 获取 sign 使用
     url: "",
     num: "1",
-    retry: "2",
+    retry: "3",
 });
 
 watch(() => form.url, (url) => {
