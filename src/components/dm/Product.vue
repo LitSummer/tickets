@@ -59,6 +59,7 @@ async function getProductInfo() {
                         return
                     } else if(result.itemBuyBtn.btnStatus === "106") {
                         // 即将开抢
+                        Message.warning(result.itemBasicInfo.sellingStartTime);
                         countDownVal.value = dayjs(result.itemBasicInfo.sellingStartTime).valueOf();
                         isPreSell.value = true
                         isShowCountDown.value = true;
